@@ -1,7 +1,83 @@
+/* palette 1
+#7400b8
+#6930c3
+#5e60ce
+#5390d9
+#4ea8de
+#48bfe3
+#56cfe1
+#64dfdf
+#72efdd
+#80ffdb */
+
+
+html {
+    height: 100%;
+}
+
 body {
-    background-color: blue;
+    background-color: #48bfe3;
+    height: 100%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    border: solid black 3px;
+   height: 100%;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    border: solid black 3px;
+    margin: 2%;
+    height: 10%;
 }
 
 h1 {
-    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: black;
+    margin: 0%;
+    margin-left: 5%;
 }
+
+
+nav {
+   
+    height: 90%;
+    width: 40%;
+    margin-left: 45%;
+    margin-top: 0.1%;
+    border: solid black 3px;
+}
+
+.about-me {
+    border: solid black 3px;
+    height: 30%;
+    margin: 2%;
+}
+
+.about-me h2 {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    color: black;
+    font-size: 30px;
+    height: 100%;
+    margin: 0%;
+    margin-top: 1%;
+    margin-left: 5%;
+}
+.work-section {
+    border: solid black 3px;
+    height: 50%;
+    margin: 2%;
+}
+
+
+
+
+
