@@ -12,7 +12,7 @@
 
 :root {
     --text-color: black;
-    --text-color2:#56cfe1;
+    --text-color2: #56cfe1;
 }
 
 
@@ -114,7 +114,8 @@ nav ul a {
     /* flex-wrap: wrap; */
     justify-content: flex-start;
     flex: 1;
-    width: 94%;
+    margin: 2%;
+    max-width: 100%;
 }
 
 .about-me h2 {
@@ -132,7 +133,7 @@ nav ul a {
 .image-p-flex {
     display: flex;
     flex: 1;
-    width: 90%
+    width: 86%
 }
 
 
@@ -150,21 +151,34 @@ nav ul a {
 }
 
 #p-text {
-    font-size: 2.5rem;
+    font-size: 2em;
+    font-weight: 900;
+    max-width: 80%;
+    
+   
 }
 
 
 @media screen and (max-width: 1180px) {
     .image-p-flex {
+        justify-content: space-evenly;
         /* font-size: 2px; */
 
 
     }
+    #my-face img {
+        height: 69%;
+        margin-left: -22%;
 
+    }
     #p-text {
+        display: flex;
+        flex-wrap: wrap;
         font-size: 1.7rem;
-        width: 50%;
-        margin-right: 35px;
+        /* width: 120%; */
+        margin-right: 10px;
+        margin-left: -77px;
+        /* margin-inline-end: 0px; */
     }
 }
 
@@ -176,17 +190,19 @@ nav ul a {
     }
 
     #my-face img {
-        height: 100px;
+        height: 13em;
         margin-left: -22%;
 
     }
 
     #p-text {
         display: flex;
+       
         /* flex-direction: column; */
         /* justify-content: space-around; */
-        width: 150%;
-        margin-left: -60px;
+        width: 100%;
+        margin-left: 0px;
+        margin-top: -7%;
         font-size: 1rem;
 
     }
@@ -211,6 +227,8 @@ nav ul a {
 }
 
 .apps-section {
+    display: flex;
+    flex-direction: column;
     border: solid black 3px;
     margin-top: .5rem;
     margin-left: 1rem;
@@ -227,9 +245,25 @@ nav ul a {
     overflow: hidden;
 }
 
-#app1 a{
+.app-row-2 {
+    display: flex;
+    /* border: solid black 3px; */
+    height: 50%;
+}
+
+#app2 {
+    border: solid black 1px;
+    margin-left: 4%;
+    margin-top: .2%;
+    width: 50%;
+    height: 97%;
+    overflow: hidden;
+}
+
+#app1 a,
+#app2 a {
     text-decoration: none;
-  
+
 }
 
 #app1 img {
@@ -237,8 +271,9 @@ nav ul a {
     margin-top: -2em;
 }
 
-#app1 img:hover {
-   opacity: 50%;
+#app1 img:hover,
+#app2 img:hover {
+    opacity: 50%;
 }
 
 #app1-text-flex {
@@ -249,17 +284,49 @@ nav ul a {
     font-size: 20px;
     margin-left: 3%;
 }
+#app2-text-flex {
+    position: absolute;
+    background-color: var(--text-color2);
+    top: 105%;
+    color: var(--text-color);
+    width: 9em;
+    font-size: 20px;
+    margin-left: 3%;
+}
+
+#app2-text-flex h3 {
+    margin-inline-start: 2%;
+}
 
 
 
 @media screen and (max-width: 768px) {
+    .apps-section{
+        width: 78%;
+    }
+    
     #app1 {
         margin-left: 4%;
         height: 20%;
     }
+
+    .app-row-2 {
+        height: 40%;
+    }
+
+    #app2 {
+        margin-left: 4%;
+        /* height: 20%; */
+    }
+
     #app1-text-flex {
-        position: absolute;
         top: 72%;
+        color: var(--text-color);
+        font-size: 10px;
+        margin-left: 3%;
+    }
+    #app2-text-flex {
+        top: 86%;
         color: var(--text-color);
         font-size: 10px;
         margin-left: 3%;
