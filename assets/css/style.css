@@ -23,7 +23,7 @@ html {
 }
 
 body {
-    background-color: #48bfe3;
+    background-color: #4ea8de;
     height: 100%;
 }
 
@@ -154,8 +154,8 @@ nav ul a {
     font-size: 2em;
     font-weight: 900;
     max-width: 80%;
-    
-   
+
+
 }
 
 
@@ -166,11 +166,13 @@ nav ul a {
 
 
     }
+
     #my-face img {
         height: 69%;
         margin-left: -22%;
 
     }
+
     #p-text {
         display: flex;
         flex-wrap: wrap;
@@ -197,7 +199,7 @@ nav ul a {
 
     #p-text {
         display: flex;
-       
+
         /* flex-direction: column; */
         /* justify-content: space-around; */
         width: 100%;
@@ -215,6 +217,10 @@ nav ul a {
     border: solid black 3px;
     height: 40%;
     margin: 2%;
+}
+
+#work-title {
+    font-size: 3em;
 }
 
 .work-section h2 {
@@ -240,18 +246,20 @@ nav ul a {
 #app1 {
     border: solid black 1px;
     margin-left: 4%;
-    width: 90%;
-    height: 90%;
+    width: 92.5%;
+    height: 40%;
     overflow: hidden;
 }
 
 .app-row-2 {
     display: flex;
-    /* border: solid black 3px; */
-    height: 50%;
+    border: solid black 3px;
+    height: 30%;
 }
 
-#app2 {
+
+#app2,
+#app3 {
     border: solid black 1px;
     margin-left: 4%;
     margin-top: .2%;
@@ -260,8 +268,19 @@ nav ul a {
     overflow: hidden;
 }
 
+#app4 {
+    border: solid black 1px;
+    margin-left: 4%;
+    margin-top: .2%;
+    width: 42.75%;
+    height: 97%;
+    overflow: hidden;
+}
+
 #app1 a,
-#app2 a {
+#app2 a,
+#app3 a,
+#app4 a {
     text-decoration: none;
 
 }
@@ -271,65 +290,168 @@ nav ul a {
     margin-top: -2em;
 }
 
+#app2 img {
+    max-width: 100em;
+    /* margin-top: -2em; */
+}
+
+#app3 img {
+    max-width: 50em;
+    margin-top: -2em;
+}
+#app4 img {
+    max-width: 50em;
+    margin-top: -6em;
+}
+
 #app1 img:hover,
-#app2 img:hover {
+#app2 img:hover,
+#app3 img:hover,
+#app4 img:hover {
     opacity: 50%;
 }
 
-#app1-text-flex {
+#app1-text-flex,
+#app2-text-flex,
+#app3-text-flex,
+#app4-text-flex {
     position: absolute;
     background-color: var(--text-color2);
-    top: 80%;
+    top: 75%;
     color: var(--text-color);
     font-size: 20px;
     margin-left: 3%;
 }
-#app2-text-flex {
-    position: absolute;
-    background-color: var(--text-color2);
-    top: 105%;
-    color: var(--text-color);
+
+
+#app1-text-flex {
+    height: 16%;
+}
+
+#app2-text-flex,
+#app3-text-flex {
+    top: 100%;
     width: 9em;
-    font-size: 20px;
-    margin-left: 3%;
+
+}
+
+#app2-text-flex {
+    height: 4.5em;
+}
+
+#app4-text-flex {
+    top: 116%;
+    width: 9em;
+    height: 13%;
+    font-size: 15px;
+
+}
+
+
+
+
+#app1-text-flex h3 {
+   margin-inline-start: .25em;
+   margin-block-start: -2em;
+   font-size: 1em;
+
 }
 
 #app2-text-flex h3 {
-    margin-inline-start: 2%;
+    margin-inline-start: 4%;
+    margin-block-start: -2em
+
+}
+
+#app3-text-flex h3 {
+    font-size: .8em;
+    margin-inline-start: .5em;
+}
+
+#app4-text-flex h3 {
+    font-size: 1.3em;
+    margin-block-start: -2em;
+    margin-inline-start: .4em;
+  
+
 }
 
 
-
+.app-row-3 {
+    display: flex;
+    border: solid black 3px;
+    height: 30%;
+}
 @media screen and (max-width: 768px) {
-    .apps-section{
-        width: 78%;
+    .apps-section {
+        width: 67%;
     }
-    
+
     #app1 {
         margin-left: 4%;
         height: 20%;
     }
 
     .app-row-2 {
-        height: 40%;
+        height: 37%;
+    }
+    .app-row-3 {
+        height: 37%;
     }
 
-    #app2 {
-        margin-left: 4%;
-        /* height: 20%; */
+    #app2,
+    #app3,
+    #app4 {
+        margin: .5em;
+    }
+
+    #app4 {
+        width: 44.5%;
+    }
+
+    #app3 img {
+        width: 30em;
+        margin-left: -60%;
+
+    }
+    #app4 img {
+        width: 30em;
+        margin-top: 0%;
+        margin-left: -120%;
+
+    }
+
+    #app1-text-flex,
+    #app2-text-flex,
+    #app3-text-flex,
+    #app4-text-flex {
+        color: var(--text-color);
+        font-size: 10px;
+        margin-left: 3%;
     }
 
     #app1-text-flex {
-        top: 72%;
-        color: var(--text-color);
-        font-size: 10px;
-        margin-left: 3%;
+        top: 71%;
+        height: 8%;
+     
     }
-    #app2-text-flex {
+
+    #app2-text-flex,
+    #app3-text-flex {
         top: 86%;
-        color: var(--text-color);
-        font-size: 10px;
-        margin-left: 3%;
+        
+    }
+    #app4-text-flex {
+        height: 6em;
+        top: 107%;
+        font-size: 1em;
+        width: 20%;
+        
+    }
+    #app4-text-flex h3 {
+        margin-block-start: -3em;
+        margin-inline-start: .5em;
+        font-size: .75em;
     }
 
 }
