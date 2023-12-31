@@ -23,7 +23,7 @@ html {
 }
 
 body {
-    background-color: #4ea8de;
+    background-color: #5390d9;
     height: 100%;
 }
 
@@ -65,10 +65,11 @@ h1 span {
 }
 
 
-nav {
+.header-nav {
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
+    /* border: solid black 3px; */
+    justify-content: center;
     height: 90%;
     width: 55%;
     margin-left: 30%;
@@ -76,7 +77,7 @@ nav {
     /* border: solid black 3px; */
 }
 
-nav ul {
+.header-nav ul {
     list-style: none;
     display: flex;
     align-items: center;
@@ -88,7 +89,7 @@ nav ul {
 
 @media screen and (max-width: 768px) {
 
-    nav ul {
+    .header-nav ul {
         margin-top: 15%;
     }
 
@@ -99,6 +100,10 @@ nav ul a {
     color: var(--text-color);
     font-size: 20px;
 }
+
+/* h2 {
+    background-color: #48bfe3;
+} */
 
 .about-me {
     display: flex;
@@ -137,7 +142,7 @@ nav ul a {
 }
 
 
-}
+
 
 
 #my-face {
@@ -235,7 +240,7 @@ nav ul a {
 .apps-section {
     display: flex;
     flex-direction: column;
-    border: solid black 3px;
+    /* border: solid black 3px; */
     margin-top: .5rem;
     margin-left: 1rem;
     width: 86%;
@@ -253,7 +258,7 @@ nav ul a {
 
 .app-row-2 {
     display: flex;
-    border: solid black 3px;
+    /* border: solid black 3px; */
     height: 30%;
 }
 
@@ -268,7 +273,8 @@ nav ul a {
     overflow: hidden;
 }
 
-#app4 {
+#app4,
+#app5 {
     border: solid black 1px;
     margin-left: 4%;
     margin-top: .2%;
@@ -280,7 +286,8 @@ nav ul a {
 #app1 a,
 #app2 a,
 #app3 a,
-#app4 a {
+#app4 a,
+#app5 a {
     text-decoration: none;
 
 }
@@ -299,22 +306,30 @@ nav ul a {
     max-width: 50em;
     margin-top: -2em;
 }
+
 #app4 img {
     max-width: 50em;
     margin-top: -6em;
 }
 
+#app5 img {
+    max-width: 50em;
+    margin-top: -2em;
+}
+
 #app1 img:hover,
 #app2 img:hover,
 #app3 img:hover,
-#app4 img:hover {
+#app4 img:hover,
+#app5 img:hover {
     opacity: 50%;
 }
 
 #app1-text-flex,
 #app2-text-flex,
 #app3-text-flex,
-#app4-text-flex {
+#app4-text-flex,
+#app5-text-flex {
     position: absolute;
     background-color: var(--text-color2);
     top: 75%;
@@ -347,20 +362,24 @@ nav ul a {
 
 }
 
+#app5-text-flex {
+    top: 117%;
+    height: 13%;
+    font-size: 1.4em;
+}
 
 
 
 #app1-text-flex h3 {
-   margin-inline-start: .25em;
-   margin-block-start: -2em;
-   font-size: 1em;
+    margin-inline-start: .25em;
+    margin-block-start: -2em;
+    font-size: 1em;
 
 }
 
 #app2-text-flex h3 {
     margin-inline-start: 4%;
     margin-block-start: -2em
-
 }
 
 #app3-text-flex h3 {
@@ -372,16 +391,25 @@ nav ul a {
     font-size: 1.3em;
     margin-block-start: -2em;
     margin-inline-start: .4em;
-  
+
+
+}
+
+#app5-text-flex h3 {
+    font-size: 1em;
+    margin-block-start: -2em;
+    margin-inline-start: .4em;
+
 
 }
 
 
 .app-row-3 {
     display: flex;
-    border: solid black 3px;
+    /* border: solid black 3px; */
     height: 30%;
 }
+
 @media screen and (max-width: 768px) {
     .apps-section {
         width: 67%;
@@ -395,18 +423,29 @@ nav ul a {
     .app-row-2 {
         height: 37%;
     }
+
     .app-row-3 {
         height: 37%;
+
     }
 
     #app2,
     #app3,
-    #app4 {
+    #app4,
+    #app5 {
         margin: .5em;
     }
 
-    #app4 {
-        width: 44.5%;
+    #app2,
+    #app3 {
+
+        margin-block-start: .1em;
+    }
+
+    #app4,
+    #app5 {
+        width: 50%;
+        margin-block-start: .1em;
     }
 
     #app3 img {
@@ -414,8 +453,16 @@ nav ul a {
         margin-left: -60%;
 
     }
+
     #app4 img {
         width: 30em;
+        margin-top: 0%;
+        margin-left: -120%;
+
+    }
+
+    #app5 img {
+        width: 60em;
         margin-top: 0%;
         margin-left: -120%;
 
@@ -424,7 +471,8 @@ nav ul a {
     #app1-text-flex,
     #app2-text-flex,
     #app3-text-flex,
-    #app4-text-flex {
+    #app4-text-flex,
+    #app5-text-flex {
         color: var(--text-color);
         font-size: 10px;
         margin-left: 3%;
@@ -433,26 +481,30 @@ nav ul a {
     #app1-text-flex {
         top: 71%;
         height: 8%;
-     
+
     }
 
     #app2-text-flex,
     #app3-text-flex {
         top: 86%;
-        
+
     }
-    #app4-text-flex {
+
+    #app4-text-flex,
+    #app5-text-flex {
         height: 6em;
         top: 107%;
         font-size: 1em;
         width: 20%;
-        
+
     }
+
     #app4-text-flex h3 {
         margin-block-start: -3em;
         margin-inline-start: .5em;
         font-size: .75em;
     }
+
 
 }
 
@@ -471,4 +523,35 @@ footer h2 {
     margin: 0%;
     margin-top: .75%;
     margin-left: 5%;
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+    /* border: solid black 3px; */
+    /* justify-content: center; */
+    height: 90%;
+    width: 55%;
+    margin-left: 45%;
+    margin-top: 0%;
+    margin-block-start: -6.3em;
+    /* border: solid black 3px; */
+}
+
+.footer-nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 2.5%;
+    margin-left: -18%;
+}
+
+@media screen and (max-width: 768px) {
+
+    .footer-nav ul {
+        margin-top: -15%;
+    }
+
 }
