@@ -17,8 +17,9 @@ I learned a lot about how to plan ahead and to begin testing responsiveness from
 
 Click on the top menu to navigate to different sections of the webpage. 
 
-![Top Half of the Page](readme_assets/Screenshot_1.png)
 ![Bottom Half of the Page](readme_assets/Screenshot_2.png)
+![Top Half of the Page](readme_assets/Screenshot_1.png)
+
 
 ## Credit
 Mark Barrie - Developer
