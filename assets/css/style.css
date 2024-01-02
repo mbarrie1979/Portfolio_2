@@ -340,6 +340,7 @@ nav ul a {
 
 
 #app1-text-flex {
+    top: 78%;
     height: 16%;
 }
 
@@ -355,7 +356,7 @@ nav ul a {
 }
 
 #app4-text-flex {
-    top: 116%;
+    top: 117%;
     width: 9em;
     height: 13%;
     font-size: 15px;
@@ -512,6 +513,7 @@ footer {
     border: solid black 3px;
     margin: 2%;
     height: 10%;
+    margin-bottom: 10px;
 }
 
 footer h2 {

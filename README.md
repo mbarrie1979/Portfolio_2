@@ -23,6 +23,7 @@ Click on the top menu to navigate to different sections of the webpage.
 
 ## Credit
 Mark Barrie - Developer
+
 Photos - Adobe 
 
 
